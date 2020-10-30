@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+user = User.create(name: 'Justin Miller', occupation: 'Software Engineer', age: 27, hobbies: 'Playing video games', hometown: 'New York')
+post1 = Post.create(content: 'This is my first post', date: '10/21/2020 11:00am', user: user)
+post2 = Post.create(content: 'Today was a good day', date:  '10/25/2020 7:00pm', user: user)
+post3 = Post.create(content: 'Im working on my final project for the flatiron school!', date: '10/29/2020 9:00pm', user: user)
+friend1 = Friend.create(name: 'Reginald Amedee', user: user)
+friend2 = Friend.create(name: 'Joseph Parker', user: user)
+friend3 = Friend.create(name: 'Adeel Ahmad', user: user)
