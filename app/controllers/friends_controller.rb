@@ -11,6 +11,6 @@ class FriendsController < ApplicationController
 
     def create
         friend = Friend.create(name: params[:name], user: params[:user_id])
-        render json: friend
+        render json: friend 
     end
 end
