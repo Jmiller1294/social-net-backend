@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
-  resources :users
-  resources :friends
-  resources :posts
+  resources :users do
+    resources :friends
+    resources :posts
+  end
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
