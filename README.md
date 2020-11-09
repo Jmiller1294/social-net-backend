@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# social-net-backend
+Rails backend for react redux portfolio project.
 
-Things you may want to cover:
+## Installation
 
-* Ruby version
+ 1. Check out the repository
+git@github.com:Jmiller1294/social-net-backend.git
 
-* System dependencies
+ 2. Change directory
+ cd social-net-backend
 
-* Configuration
+ 3. Install Gems
+ bundle install
 
-* Database creation
+ 4. migrate the database and seed database
+ rails db:migrate
+ rails db:seed
 
-* Database initialization
+ 5. Start the Rails server
+ You can start the rails server using the command given below: 
+ rails s 
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Built With
+  Rails - The web framework used
+  
+## License
+  Check License.md file

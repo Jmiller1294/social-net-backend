@@ -29,7 +29,7 @@ class PostsController < ApplicationController
     end
 
     def post_params
-        params.require(:post).permit(:content, :date)
+        params.require(:post).permit(:content)
     end
     
 end
