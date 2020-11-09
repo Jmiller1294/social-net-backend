@@ -15,9 +15,9 @@ friend3 = Friend.create(name: 'Adeel Ahmad', user: user)
 
 
 user2 = User.create(name: 'Jason Smith', occupation: 'Scientist', age: 35, hobbies: 'Gym', hometown: 'New Jersey')
-post1 = Post.create(content: 'What a great day', date: '10/21/2020 11:00am', user: user2)
-post2 = Post.create(content: 'Time to study', date:  '10/25/2020 7:00pm', user: user2)
-post3 = Post.create(content: 'Experiment was a success', date: '10/29/2020 9:00pm', user: user2)
+post1 = Post.create(content: 'What a great day', date: Time.now.strftime("%d/%m/%Y %H:%M"), user: user2)
+post2 = Post.create(content: 'Time to study', user: user2)
+post3 = Post.create(content: 'Experiment was a success', user: user2)
 friend1 = Friend.create(name: 'Kris Santos', user: user2)
 friend2 = Friend.create(name: 'Jaris Scott', user: user2)
 friend3 = Friend.create(name: 'Kyle Jackson', user: user2)

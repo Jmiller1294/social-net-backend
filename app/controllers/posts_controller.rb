@@ -19,7 +19,7 @@ class PostsController < ApplicationController
 
     def destroy
         post = Post.find_by(id: params[:id])
-        post.destroy
+        post.delete
     end
 
     private
