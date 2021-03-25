@@ -14,6 +14,7 @@ ActiveRecord::Schema.define(version: 2020_10_30_003418) do
 
   create_table "friends", force: :cascade do |t|
     t.string "name"
+    t.string "status"
     t.integer "user_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
